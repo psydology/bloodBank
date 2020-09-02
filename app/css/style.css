@@ -1,0 +1,647 @@
+/* global probarity */
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: cairo, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*************************
+*******Header******
+**************************/
+
+.top-bar {
+    background-color: #2d3e50;
+    color: #fff;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.separatore,
+.english {
+    border-right: solid 1px #c0c4c8;
+}
+
+.callrotate {
+    transform: rotate(-45deg);
+}
+
+.socialmedia {
+    text-align: center;
+}
+
+.mail {
+    text-align: left;
+}
+
+.mail i {
+    padding-right: 10px;
+}
+
+.socialmedia li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.socialmedia li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socialmedia li a:hover {
+    color: #c0c4c8;
+}
+
+.socialmedia li a i {
+    font-size: 20px;
+}
+
+.english,
+.arabic {
+    padding: 2px;
+}
+
+.lang a {
+    color: #c0c4c8;
+}
+
+.lang a:hover {
+    color: darkred;
+}
+
+
+/*************************
+*******Navbar******
+**************************/
+
+.navbar {
+    direction: rtl;
+    background-color: #f9f9f9 !important;
+}
+
+.nav-item:not(:last-child) {
+    border-left: solid 1px #c0c4c8;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #e52f36 !important;
+    font-weight: bold;
+}
+
+.nav-border {
+    position: absolute;
+    top: 107px;
+    width: 5%;
+}
+
+.nav-item:hover>.nav-border {
+    border-bottom: solid 4px #e52f36;
+    transition: border-width 0.6s linear;
+}
+
+.creataccount {
+    color: #2d3e50;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.creataccount:hover {
+    color: #e52f36;
+}
+
+.btn-primary {
+    background-color: #2d3e50;
+    padding: 3px 15px;
+}
+
+.btn-primary:hover {
+    background-color: #e52f36;
+}
+
+
+/*************************
+*******bloodbank******
+**************************/
+
+.bloodbank {
+    background-image: url(../imgs/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 485px;
+    direction: rtl;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    height: 100%;
+}
+
+.carousel-item {
+    margin: 15% 4% 0 0;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators li:hover {
+    border: solid 1px #e52f36;
+}
+
+.bloodhead {
+    color: #e52f36;
+    font-weight: bold;
+}
+
+.bloodp {
+    width: 31%;
+    justify-content: right;
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+
+/*************************
+*******blooddefenation******
+**************************/
+
+.blooddefenation {
+    background-image: url(../imgs/subtle-pattern-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+}
+
+.defenation {
+    font-weight: bold;
+}
+
+.bloodhart img {
+    max-width: 100%;
+    margin: 10px auto;
+    position: absolute;
+    left: 0;
+}
+
+.defenation p {
+    padding: 11% 9% 0;
+    text-align: center;
+    line-height: 2.86rem;
+    color: gray;
+}
+
+.defenation p span {
+    color: #e52f36;
+}
+
+.aboutblood {
+    max-width: 100%;
+}
+
+
+/*************************
+*******bloodorders******
+**************************/
+
+.orderhead {
+    margin-top: 50px;
+    direction: rtl;
+}
+
+.orderhead h3 {
+    color: #e52f36;
+    border-bottom: solid 2px #e52f36;
+    width: 10%;
+}
+
+.orders hr {
+    margin-top: -.5rem !important;
+}
+
+.card-title {
+    color: #e52f36;
+}
+
+.card img {
+    padding: 3px;
+}
+
+.card-body i {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    background-color: #2d3e50;
+    color: #c0c4c8;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+/*************************
+*******donationorders******
+**************************/
+
+.donation hr {
+    margin-bottom: .5rem;
+}
+
+.donationhead {
+    margin: 50px auto -16px;
+}
+
+.donationhead h3 {
+    margin-right: 44%;
+    text-align: center;
+    color: #e52f36;
+    border-bottom: solid 2px #e52f36;
+    width: 14%;
+}
+
+.donationbg {
+    background-image: url(../imgs/subtle-pattern-1.jpg);
+}
+
+.donationform form {
+    text-align: center;
+}
+
+.donationform select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../imgs/angle-down-dark_dkyopo.png");
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+    border: 1px solid #dfdfdf;
+    border-radius: 32px;
+    padding: 1rem;
+    padding-right: 2rem;
+    width: 35%;
+    margin: 20px 4px;
+}
+
+.donationform form button {
+    border-radius: 100%;
+    background-color: #fff;
+    border: none;
+    width: 55px;
+    height: 55px;
+}
+
+.orderofdonation {
+    background-color: #fff;
+    border-top-right-radius: 100px 100px;
+    border-bottom-right-radius: 100px 100px;
+    margin: 10px;
+}
+
+.bloodtype {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    margin: 10px;
+    background: #f2f2f2;
+    border-radius: 100%;
+}
+
+.bloodtype p {
+    padding: 8px;
+    margin: 10px;
+}
+
+.blooddata {
+    color: #5b6570;
+    font-weight: bold;
+}
+
+.blooddata p {
+    margin-top: 10px;
+}
+
+
+/*************************
+*******bloodcontact******
+**************************/
+
+.bloodcontact {
+    background-image: url(../imgs/call.jpg);
+    margin-top: 20px;
+    direction: rtl;
+    background-size: cover;
+    position: relative;
+    height: 320px;
+}
+
+.contactus h2 {
+    text-align: center;
+    color: #e52f36;
+    text-decoration: underline;
+    margin: 40px auto;
+    border-bottom: solid 1px;
+    width: 23%;
+}
+
+.contactus p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.contactnumber {
+    background-color: #24a516;
+    border-radius: 60px;
+    width: 50%;
+    margin: auto;
+    padding: 19px 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.contactus img {
+    position: absolute;
+    top: 154px;
+    left: 149px;
+    height: 78px;
+}
+
+
+/*************************
+*******bloodapp******
+**************************/
+
+.bloodapp {
+    background-image: url(../imgs/BG-phone.png);
+    background-size: cover;
+}
+
+.bloodapph3 {
+    margin-top: 80px;
+    padding: 20px;
+    color: #534e50 !important;
+    font-weight: bold !important;
+}
+
+.bloodappp {
+    line-height: 2.5rem;
+    color: #534e50be !important;
+    font-weight: bold !important;
+}
+
+.bloodapphead {
+    text-align: center;
+    color: #534e50 !important;
+    font-weight: bold !important;
+}
+
+.bloodappimg {
+    margin: 20px 40px;
+}
+
+.bloodappmainimg {
+    width: 486px;
+    margin: 40px;
+}
+
+
+/**********************
+************************
+*******upperfooter******
+************************
+***********************/
+
+.upperfooter {
+    background-color: #1a1f25;
+    color: #fff;
+}
+
+.upperfooter .container .row .col-md-4 {
+    margin-top: 60px;
+}
+
+.upperfooter .container .row .col-md-4 ul {
+    list-style-type: none;
+    line-height: 3rem;
+}
+
+.upperfooter .container .row .col-md-4 ul li a:hover {
+    text-decoration: none;
+    color: #e52f36;
+}
+
+.bloodstore {
+    font-size: 15px;
+    color: #e52f36;
+    margin-bottom: 40px;
+}
+
+.bloodstoreimg {
+    margin: 20px 0;
+}
+
+.downfooter {
+    background-color: #14171c;
+    color: #fff;
+}
+
+
+/**********************
+************************
+*******register******
+************************
+***********************/
+
+.register {
+    background-color: #fbfbfb;
+}
+
+.category,
+.registerform {
+    background-color: #fff;
+}
+
+.category span {
+    color: #ccc0c0;
+    padding: 15px 2px;
+}
+
+.category p {
+    margin-right: 5px;
+    padding: 15px 2px;
+}
+
+.registerform form {
+    width: 85%;
+    margin: 20px auto;
+}
+
+.registerform form input,
+.registerform select {
+    padding: 25px;
+    background-color: #f7f7f7;
+    height: calc(2.25rem + 10px);
+}
+
+.registerform form button {
+    padding: 10px 123px;
+    margin-right: 30%;
+}
+
+
+/**********************
+************************
+*******contactus page******
+************************
+***********************/
+
+.contactheader {
+    background-color: #2d3e50;
+    color: #fff;
+}
+
+.contactheader h5 {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.contactbody {
+    background-color: #fff;
+    line-height: 3rem;
+}
+
+.contactbody img {
+    text-align: center;
+    margin: 60px 160px;
+}
+
+.contactbody p {
+    margin-right: 20px;
+}
+
+.contacticons {
+    text-align: center;
+    margin: 3px;
+}
+
+
+/**********************
+************************
+******onedonation page******
+************************
+***********************/
+
+.Dtitle p,
+.Ddetails p {
+    line-height: 3rem;
+}
+
+.Dparagraph {
+    line-height: 2rem;
+    border: 1px solid #ccc0c0;
+    margin: 20px 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+/**********************
+************************
+******with log in page******
+************************
+***********************/
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+/**********************
+************************
+******articles page******
+************************
+***********************/
+
+.acteclesimg {
+    text-align: center;
+}
+
+.acteclesimg img {
+    width: 50%;
+    margin: 20px;
+}
+
+.arteclesh3 {
+    background: #2d3e50;
+    color: #fff;
+}
+
+.arteclesh3 h3,
+.arteclesh3 i {
+    display: inline-block;
+}
+
+.arteclesh3 i {
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 4px;
+    bottom: -259px;
+    left: 135px;
+}
+
+.areclesp {
+    background-color: #fff;
+    padding: 10px;
+    line-height: 2rem;
+}
